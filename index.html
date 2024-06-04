@@ -1,7 +1,58 @@
-[
-{
-"version":"1.6",
-" changelog":"fix bugs"
-"link":"https://api.whatsapp.com/send?phone=+201005033610"
-}
-]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NU Results - Honours</title>
+    <meta name="google-site-verification" content="fGsIJbJKlxQODDzwQhD0tbYAntkYqQdL-32yAcEQ7XA" />
+    <meta name="description" content="Honours Results of the National University are seen on this website quickly and easily.">
+    <meta name="keywords" content="nuresult,nu result,nu 1st year result,nu 2nd year result,nu 3rd year result,nu 4th year result">
+    <meta name="author" content="Ashraful Sarkar">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png" type="image/gif" sizes="16x16">
+</head>
+<body>
+    <div class="container">
+        <header class="header-area">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="site-name">
+                <h2>National University Honours Results</h2>
+            </div>
+        </header>
+        <div class="result-area">
+            <form id="getNuResult" action="javascript:result_show()">
+                <div class="yearLabel dm">
+                    <label for="year">Honours Year:</label>
+                    <select id="year">
+                        <option value="select" disabled selected>Select One</option>
+                        <option value="first">First Year</option>
+                        <option value="second">Second Year</option>
+                        <option value="third">Third Year</option>
+                        <option value="fourth">Forth Year</option>
+                    </select>
+                </div>
+                <div class="roll dm">
+                    <label for="roll">Roll/Reg:</label>
+                    <input type="number" id="roll">
+                </div>
+                <div class="year dm">
+                    <label for="exam_year">Exam. Year:</label>
+                    <input type="number" id="exam_year">
+                </div>
+                
+                <div class="getResult">
+                <input type="submit" value="Get Result">
+                </div>
+            </form>
+        </div>
+        <footer class="footer-area">
+            <div class="copyRight">
+                <p>Design & Developed By <a href="https://www.facebook.com/sohanur.19?mibextid=ZbWKwL" target="_blank">Sohanur Rahman</a></p>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
