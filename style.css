@@ -1,0 +1,196 @@
+/*
+  Theme Name: National University Honours Results
+  Author: Ashraful Sarkar
+  Support: ashrafulsarkar47@gmail.com
+  Description: Honours Results of the National University are seen on this website quickly and easily.
+  Version: 2.0.0
+*/
+
+/* CSS Index 
+============================
+1. Theme default css
+2. header area
+3. result area
+4. footer area
+5. responsive area
+============================
+*/
+
+/* 1. Theme default css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input:focus,
+button:focus,
+select:focus {
+    outline: none;
+}
+img {
+    max-width: 100%;
+}
+/* 2. header area */
+body {
+    background: #E0E0E0;
+}
+.container {
+    width: 850px;
+    margin: auto;
+}
+header.header-area {
+    height: 135px;
+    background: rgb(0,122,178);
+    background: -webkit-linear-gradient(231deg, rgba(0, 122, 178, 1) 0%, rgba(0, 75, 103, 1) 100%);
+    background: -o-linear-gradient(231deg, rgba(0, 122, 178, 1) 0%, rgba(0, 75, 103, 1) 100%);
+    background: linear-gradient(321deg, rgba(0, 122, 178, 1) 0%, rgba(0, 75, 103, 1) 100%);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.logo {
+    width: 70px;
+    margin-left: 35px;
+    margin-top: 7px;
+}
+.site-name h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: -20px;
+    font-weight: 400;
+    position: relative;
+}
+.site-name h2::after {
+    content: "";
+    background: #fff;
+    width: 300px;
+    height: 1px;
+    position: absolute;
+    left: 1px;
+    bottom: -15px;
+}
+/* 3. result area */
+div.result-area {
+    background: #fff;
+    padding: 45px 0;
+    border-radius: 5px;
+}
+form#getNuResult {
+    width: 300px;
+    margin: auto;
+}
+label {
+    width: 40%;
+    display: block;
+    color: #2e2e2e;
+}
+.dm {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+select,
+input {
+    width: 60%;
+    font-size: 14px;
+    height: 30px;
+    display: block;
+    color: #2e2e2e;
+    background: none;
+    border: 1px solid #b0b0b0;
+    border-radius: 3px;
+}
+.note {
+    float: right;
+    font-size: 14px;
+    color: #656565;
+}
+.getResult {
+    text-align: center;
+    padding-top: 50px;
+}
+.getResult input {
+    background: green;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    height: 40px;
+    width: 120px;
+    border: none;
+}
+/* 4. footer area */
+.footer-area {
+    background: rgb(0,122,178);
+    background: -webkit-linear-gradient(231deg, rgba(0, 122, 178, 1) 0%, rgba(0, 75, 103, 1) 100%);
+    background: -o-linear-gradient(231deg, rgba(0, 122, 178, 1) 0%, rgba(0, 75, 103, 1) 100%);
+    background: linear-gradient(321deg, rgba(0, 122, 178, 1) 0%, rgba(0, 75, 103, 1) 100%);
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.copyRight p {
+    color: #fff;
+    padding: 15px;
+}
+.copyRight p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* 5. responsive area */
+@media (min-width: 600px) and (max-width: 900px) {
+    .container {
+        width: 550px;
+    }
+    .site-name h2 {
+        font-size: 24px;
+    }
+}
+@media (min-width: 408px) and (max-width: 599px) {
+    .container {
+        width: 390px;
+    }
+    .site-name h2 {
+        font-size: 24px;
+    }
+    .site-name h2::after {
+        width: 190px;
+    }
+}
+@media (min-width: 320px) and (max-width: 407px) {
+    .container {
+        width: 96%;
+    }
+    form#getNuResult {
+    width: 88%;
+    }
+    .logo {
+    margin-left: 20px;
+    }
+    .site-name h2 {
+        font-size: 22px;
+        margin-left: 12px;
+        margin-right: 15px;
+    }
+    .site-name h2::after {
+        width: 170px;
+    }
+    label, .refresh {
+    font-size: 16px;
+    }
+    .copyRight p {
+    font-size: 15px;
+    }
+} 
