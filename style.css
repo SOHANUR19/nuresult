@@ -1,11 +1,3 @@
-/*
-  Theme Name: National University Honours Results
-  Author: Ashraful Sarkar
-  Support: ashrafulsarkar47@gmail.com
-  Description: Honours Results of the National University are seen on this website quickly and easily.
-  Version: 2.0.0
-*/
-
 /* CSS Index 
 ============================
 1. Theme default css
@@ -32,58 +24,63 @@ input[type="number"] {
 input:focus,
 button:focus,
 select:focus {
-    outline: none;
+outline: none;
 }
 img {
     max-width: 100%;
 }
 /* 2. header area */
+
+@font-face {
+    font-family: font;
+    src: url(product.ttf);
+}
+
 body {
     background: #E0E0E0;
+    font-family: font;
 }
 .container {
-    width: 850px;
-    margin: auto;
-}
-header.header-area {
-    height: 135px;
+    width: auto;
+    margin: 10px;
     background: rgb(0,122,178);
     background: -webkit-linear-gradient(231deg, rgba(0, 122, 178, 1) 0%, rgba(0, 75, 103, 1) 100%);
     background: -o-linear-gradient(231deg, rgba(0, 122, 178, 1) 0%, rgba(0, 75, 103, 1) 100%);
     background: linear-gradient(321deg, rgba(0, 122, 178, 1) 0%, rgba(0, 75, 103, 1) 100%);
+    border-radius: 5px;
+}
+header.header-area {
+    height: 130px;
     margin-top: 20px;
     display: flex;
     align-items: center;
-    border-radius: 5px;
 }
 .logo {
-    width: 70px;
+    width: 60px;
     margin-left: 35px;
     margin-top: 7px;
 }
 .site-name h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 27px;
+    font-size: 50px;
     color: #fff;
     margin-left: 20px;
     margin-top: -20px;
-    font-weight: 400;
+    font-weight: bold;
     position: relative;
 }
-.site-name h2::after {
-    content: "";
-    background: #fff;
-    width: 300px;
-    height: 1px;
-    position: absolute;
-    left: 1px;
-    bottom: -15px;
+
+.site-name h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 20px;
+    font-weight: bold;
+    position: relative;
 }
+
 /* 3. result area */
 div.result-area {
     background: #fff;
     padding: 45px 0;
-    border-radius: 5px;
 }
 form#getNuResult {
     width: 300px;
@@ -132,10 +129,6 @@ input {
 }
 /* 4. footer area */
 .footer-area {
-    background: rgb(0,122,178);
-    background: -webkit-linear-gradient(231deg, rgba(0, 122, 178, 1) 0%, rgba(0, 75, 103, 1) 100%);
-    background: -o-linear-gradient(231deg, rgba(0, 122, 178, 1) 0%, rgba(0, 75, 103, 1) 100%);
-    background: linear-gradient(321deg, rgba(0, 122, 178, 1) 0%, rgba(0, 75, 103, 1) 100%);
     text-align: center;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -193,4 +186,4 @@ input {
     .copyRight p {
     font-size: 15px;
     }
-} 
+}
