@@ -1,4 +1,4 @@
-# nuresult
+# NU Result
 Honours Results of the National University are seen on this website quickly and easily.
 # Demo
 https://sohanur19.github.io/nuresult
